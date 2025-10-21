@@ -49,6 +49,7 @@ module mealy_overlapping(
                 else
                     nxt_state = B;    
             end
+            default: nxt_state <= cur_state;
         endcase
     end
 
